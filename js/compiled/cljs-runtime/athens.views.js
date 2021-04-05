@@ -18,11 +18,11 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 });
 athens.views.page_panel = (function athens$views$page_panel(){
 var uid = re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("current-route","uid","current-route/uid",-327873095)], null));
-var map__92772 = cljs.core.deref(posh.reagent.pull(athens.db.dsdb,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"*","*",345799209,null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("block","uid","block/uid",-1623585167),cljs.core.deref(uid)], null)));
-var map__92772__$1 = (((((!((map__92772 == null))))?(((((map__92772.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__92772.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__92772):map__92772);
-var title = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__92772__$1,new cljs.core.Keyword("node","title","node/title",628940777));
-var string = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__92772__$1,new cljs.core.Keyword("block","string","block/string",-2066596447));
-var id = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__92772__$1,new cljs.core.Keyword("db","id","db/id",-1388397098));
+var map__38781 = cljs.core.deref(posh.reagent.pull(athens.db.dsdb,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"*","*",345799209,null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("block","uid","block/uid",-1623585167),cljs.core.deref(uid)], null)));
+var map__38781__$1 = (((((!((map__38781 == null))))?(((((map__38781.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__38781.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__38781):map__38781);
+var title = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__38781__$1,new cljs.core.Keyword("node","title","node/title",628940777));
+var string = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__38781__$1,new cljs.core.Keyword("block","string","block/string",-2066596447));
+var id = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__38781__$1,new cljs.core.Keyword("db","id","db/id",-1388397098));
 if(cljs.core.truth_(title)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.node_page.node_page_component,id], null);
 } else {
@@ -39,9 +39,9 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
  *   created when app inits. This is expected, but perhaps shouldn't be a side effect here.
  */
 athens.views.match_panel = (function athens$views$match_panel(route_name){
-return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (){var G__92776 = route_name;
-var G__92776__$1 = (((G__92776 instanceof cljs.core.Keyword))?G__92776.fqn:null);
-switch (G__92776__$1) {
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (){var G__38783 = route_name;
+var G__38783__$1 = (((G__38783 instanceof cljs.core.Keyword))?G__38783.fqn:null);
+switch (G__38783__$1) {
 case "settings":
 return athens.views.settings_page.settings_page;
 
@@ -79,8 +79,8 @@ return cljs.core.deref(modal);
 } else {
 return and__4115__auto__;
 }
-})())?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.filesystem.window], null):(cljs.core.truth_(cljs.core.deref(loading))?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.spinner.initial_spinner_component], null):new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"<>","<>",1280186386),(cljs.core.truth_(cljs.core.deref(modal))?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.filesystem.window], null):null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),stylefy.core.use_style.cljs$core$IFn$_invoke$arity$1(athens.views.app_wrapper_style),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.app_toolbar.app_toolbar], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.left_sidebar.left_sidebar], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),stylefy.core.use_style.cljs$core$IFn$_invoke$arity$2(athens.views.main_content_style,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-scroll","on-scroll",1590848677),((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(route_name),new cljs.core.Keyword(null,"home","home",-74557309)))?(function (p1__92777_SHARP_){
-return (athens.views.daily_notes.db_scroll_daily_notes.cljs$core$IFn$_invoke$arity$1 ? athens.views.daily_notes.db_scroll_daily_notes.cljs$core$IFn$_invoke$arity$1(p1__92777_SHARP_) : athens.views.daily_notes.db_scroll_daily_notes.call(null,p1__92777_SHARP_));
+})())?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.filesystem.window], null):(cljs.core.truth_(cljs.core.deref(loading))?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.spinner.initial_spinner_component], null):new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"<>","<>",1280186386),(cljs.core.truth_(cljs.core.deref(modal))?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.filesystem.window], null):null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),stylefy.core.use_style.cljs$core$IFn$_invoke$arity$1(athens.views.app_wrapper_style),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.app_toolbar.app_toolbar], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.left_sidebar.left_sidebar], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),stylefy.core.use_style.cljs$core$IFn$_invoke$arity$2(athens.views.main_content_style,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-scroll","on-scroll",1590848677),((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(route_name),new cljs.core.Keyword(null,"home","home",-74557309)))?(function (p1__38784_SHARP_){
+return (athens.views.daily_notes.db_scroll_daily_notes.cljs$core$IFn$_invoke$arity$1 ? athens.views.daily_notes.db_scroll_daily_notes.cljs$core$IFn$_invoke$arity$1(p1__38784_SHARP_) : athens.views.daily_notes.db_scroll_daily_notes.call(null,p1__38784_SHARP_));
 }):null)], null)),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.match_panel,cljs.core.deref(route_name)], null)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.right_sidebar.right_sidebar_component], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.devtool.devtool_component], null)], null)], null)
 ))], null);
 });

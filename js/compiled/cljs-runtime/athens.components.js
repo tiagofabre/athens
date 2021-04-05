@@ -37,12 +37,12 @@ athens.components.block_embed_adjustments = new cljs.core.PersistentArrayMap(nul
 athens.parse_renderer.component.cljs$core$IMultiFn$_add_method$arity$3(null,new cljs.core.Keyword(null,"block-embed","block-embed",-417443082),(function (content,uid){
 var block_uid = cljs.core.last(cljs.core.re_find(/\(\((.+)\)\)/,content));
 if(cljs.core.truth_(athens.db.e_by_av(new cljs.core.Keyword("block","uid","block/uid",-1623585167),block_uid))){
-var with_let90423 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let90423","with-let90423",1150341616));
-var temp__5739__auto___90445 = reagent.ratom._STAR_ratom_context_STAR_;
-if((temp__5739__auto___90445 == null)){
+var with_let38593 = reagent.ratom.with_let_values(new cljs.core.Keyword(null,"with-let38593","with-let38593",857155260));
+var temp__5739__auto___38608 = reagent.ratom._STAR_ratom_context_STAR_;
+if((temp__5739__auto___38608 == null)){
 } else {
-var c__48059__auto___90446 = temp__5739__auto___90445;
-if((with_let90423.generation === c__48059__auto___90446.ratomGeneration)){
+var c__19736__auto___38609 = temp__5739__auto___38608;
+if((with_let38593.generation === c__19736__auto___38609.ratomGeneration)){
 if(reagent.debug.has_console){
 ((reagent.debug.tracking)?reagent.debug.track_console:console).error(["Warning: The same with-let is being used more ","than once in the same reactive context."].join(''));
 } else {
@@ -50,13 +50,13 @@ if(reagent.debug.has_console){
 } else {
 }
 
-(with_let90423.generation = c__48059__auto___90446.ratomGeneration);
+(with_let38593.generation = c__19736__auto___38609.ratomGeneration);
 }
 
 
-var init90424 = (with_let90423.length === (0));
-var embed_id = ((init90424)?(with_let90423[(0)] = cljs.core.random_uuid()):(with_let90423[(0)]));
-var res__48060__auto__ = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.block-embed","div.block-embed",1649385290),stylefy.core.use_style.cljs$core$IFn$_invoke$arity$1(athens.components.block_embed_adjustments),(function (){var block = athens.db.get_block_document(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("block","uid","block/uid",-1623585167),block_uid], null));
+var init38594 = (with_let38593.length === (0));
+var embed_id = ((init38594)?(with_let38593[(0)] = cljs.core.random_uuid()):(with_let38593[(0)]));
+var res__19737__auto__ = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.block-embed","div.block-embed",1649385290),stylefy.core.use_style.cljs$core$IFn$_invoke$arity$1(athens.components.block_embed_adjustments),(function (){var block = athens.db.get_block_document(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("block","uid","block/uid",-1623585167),block_uid], null));
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"<>","<>",1280186386),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.views.blocks.block_el,athens.util.recursively_modify_block_for_embed(block,embed_id),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"linked-ref","linked-ref",-925333945),false], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"block-embed?","block-embed?",-216201089),true], null)], null),(cljs.core.truth_(cljs.core.deref(re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("editing","is-editing","editing/is-editing",-1509220484),uid], null))))?null:new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,">",">",-555517146),module$node_modules$$material_ui$icons$Edit.default,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (e){
 e.stopPropagation();
 
@@ -64,7 +64,7 @@ return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.co
 })], null)], null))], null);
 })()], null);
 
-return res__48060__auto__;
+return res__19737__auto__;
 } else {
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),"{{",clojure.string.replace(content,block_uid,"invalid"),"}}"], null);
 }
