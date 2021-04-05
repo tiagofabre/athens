@@ -438,8 +438,8 @@
 (reg-event-fx
   :http-success/get-db
   (fn [_ [_ json-str]]
-    (let [datoms (db/str-to-db-tx json-str)
-          new-db (d/db-with (d/empty-db db/schema) datoms)]
+    (let [db (db/str-to-db-tx json-str)
+          new-db (d/db-with (d/empty-db db/schema) (db :datoms))]
       {:fx [[:dispatch [:reset-conn new-db]
              :dispatch [:local-storage/set-db new-db]]]})))
 
